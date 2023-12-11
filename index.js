@@ -10,9 +10,6 @@ const app = express();
 const blockchain = new Blockchain();
 const pubsub = new Pubsub({blockchain});
 
-// setTimeout(() => {
-//   pubsub.broadcastChain();
-// }, 1000);
 
 app.use(express.json());
 
