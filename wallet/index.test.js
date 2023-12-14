@@ -8,10 +8,11 @@ describe('Wallet', () => {
   });
 
   it('hav a balance', () => {
-    expect(wallet).toHaveBeenCalled(balance)
+    expect(wallet).toHaveProperty('balance')
   });
 
   it('hav a publicKey', () => {
-    expect(wallet).toHaveBeenCalled(publicKey)
+    console.log(wallet.publicKey);
+    expect(wallet).toHaveProperty('publicKey')
   });
 });
