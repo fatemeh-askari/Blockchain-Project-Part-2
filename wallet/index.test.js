@@ -16,6 +16,7 @@ describe('Wallet', () => {
     console.log(wallet.publicKey);
     expect(wallet).toHaveProperty('publicKey')
   });
+  
 
   describe('singing data', () => {
     const data = 'some-data';
@@ -36,4 +37,4 @@ describe('Wallet', () => {
       })).toBe(false);
     });
   });
-});
+}); 
